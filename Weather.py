@@ -11,6 +11,7 @@ def get_weather(city, api_key):
         current_weather = data['current']
         print(f"Weather in {city}:")
         print(f"Temperature: {current_weather['temp_c']}°C")
+        print(f"Temperature feels like: {current_weather['feelslike_c']}°C")
         print(f"Condition: {current_weather['condition']['text']}")
         print(f"Humidity: {current_weather['humidity']}%")
         print(f"Wind Speed: {current_weather['wind_kph']}kph")
